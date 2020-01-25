@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+.seo-queries {
+  position: relative;
+  box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+}
+
+.card-header {
+  box-shadow: inset 0 50px 100px -61px rgba(87, 87, 87, 0.92);
+}
+
+.card-body.bg-gray {
+  box-shadow: inset 0 0px 34px 0px rgba(87, 87, 87, 0.32);
+}
+
+.btn {
+  box-shadow: inset 0px 25px 50px -35px rgba(87, 87, 87, 0.75);
+}
+
+.exceptions-box {
+  position: absolute;
+  width: 40%;
+  height: 0;
+  padding: 0 10px;
+  box-shadow: inset 0 0 2px 1px rgb(223, 223, 223);
+  background-color: rgb(247, 247, 247);
+  border-bottom-right-radius: 5px;
+  right: 0;
+  top: 88px;
+  z-index: 10;
+  overflow: hidden;
+  transition: height 0.6s;
+}
+
+.exceptions-box.show {
+  height: 85%;
+
+}
+
+.icon-check{
+  cursor: pointer;
+  color: #b0b0b0;
+  transition: color 0.2s;
+  margin: 10px 5px 10px 10px;
+}
+
+.icon-check:hover {
+  color: #000;
+}
+
+.exceptions-btn:focus {
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #c1c1c1;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(124, 124, 124, 0.25);
+}
+
+.exceptions-items {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #525252;
+  border-radius: 5px;
+  padding: 3px 30px 5px 10px;
+  background-color: rgb(213, 213, 213);
+}
+
+.exceptions-items + .exceptions-items {
+  margin-left: 10px;
+}
+
+.exceptions-delete {
+  position: absolute;
+  right: 5px;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.addExceptionsForm-hidden {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.addExceptionsForm-hidden.show {
+  height: 130px;
+}
+
+.message-alert,
+.message-empty {
+  display: none;
+}
+
+.message-alert.show,
+.message-empty.show {
+  display: block;
+}
+
+.res-title {
+  font-size: 18px;
+}
+
+.resSeo {
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+
+.resSeo:focus {
+  outline-color: #868686;
+}
+
+/********** Clock *******************/
+.clock {
+  display: inline-flex;
+  margin-left: auto;
+  width: 123px;
+  padding: 3px 5px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+.clock-display {
+  width: 65px;
+  margin-right: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.icon-clock {
+  color: #7d858c;
+  cursor: pointer;
+}
+
+.icon-clock:hover {
+  color: #000;
+}
+/********** Clock End *******************/

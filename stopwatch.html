@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatcher</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/timer_stopwatch.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+        <button type="button" class="timer__button ">
+            <a href="index.html" class="timer__button_link">&larr; Органайзер</a>
+        </button>
+        <button type="button" class="timer__button">
+            <a href="seo.html" class="timer__button_link"> &larr; SEO</a>
+        </button>
+      <button data-start="start" class="timer__button">Старт</button>
+      <button data-lap="lap" class="timer__button">Круг (стоп)</button>
+      <button data-stop="stop" class="timer__button">Стоп</button>
+      <button data-reset="reset" class="timer__button">Сброс</button>
+        <!--<form name="stopwatchForm" id="stopWatchText">-->
+          <!--<input type="text" name="minutes" placeholder="Название секундомера">-->
+      <!--</form>-->
+    </div>
+    <div class="display">
+      <h1 class="display__time-left">0:00:00:00</h1>
+        <div class="display-lap"></div>
+    </div>
+  </div>
+
+  <script src="js/stopwatch.js"></script>
+</body>
+</html>

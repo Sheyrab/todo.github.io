@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organizer</title>
+
+    <!-- Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/todoOwn.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <section class="todoList">
+            <div class="card mb-3">
+                <div class="card-header d-flex"><span class="mr-2 font-weight-bold">Органайзер</span> v1.3
+                    <!-- Clock Start-->
+                    <div class="clock">
+                        <div class="clock-display"></div>
+                        <div class="clock-control">
+                            <i class="far fa-clock icon-clock"></i>
+                            <i class="far fa-bell icon-clock"></i>
+                        </div>
+                    </div>
+                    <!-- Clock End-->
+                </div>
+                <div class="card-body bg-gray">
+                    <a href="seo.html" class="btn btn-outline-secondary btn-sm">SEO page</a>
+                    <a href="timer.html" class="btn btn-outline-secondary btn-sm">Таймер</a>
+                    <a href="stopwatch.html" class="btn btn-outline-secondary btn-sm">Секундомер</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Поставить цель</div>
+                <div class="card-body">
+                    <div class="alert message-alert"></div>
+                    <form name="addTodoItem">
+                        <div class="form-group">
+                            <label for="todoText">Описание цели</label>
+                            <input type="text" class="form-control" id="todoText">
+                            <div class="invalid-feedback">
+                                Заполните поле ввода пожалуйста
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary mt-3">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- / card-->
+            <div class="card">
+                <div class="card-header">Список целей</div>
+                <div class="card-body">
+                    <div class="alert alert-info message-empty">В списке нет ни одной цели!</div>
+                    <ul class="list-group">
+                        <!--<li class="list-group-item">Мое первое дело</li>-->
+                    </ul>
+                        <button type="submit" class="btn btn-outline-primary mt-3 btn-clear-all">Очистить список</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- / container-->
+
+<script src="js/todoOwn.js"></script>
+<script src="js/clock.js"></script>
+
+
+</body>
+</html>

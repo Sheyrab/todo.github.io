@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEO SORTER</title>
+    <!-- Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/todoOwn.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="seo-queries">
+        <div class="exceptions-box">
+            <i class="far fa-plus-square exceptions-add-btn icon-check" title="Добавить слово"></i>
+            <i class="fas fa-cart-arrow-down exceptions-add-archive icon-check" title="Загрузить список по умолчанию"></i>
+            <i class="fas fa-sort-alpha-down exceptions-sort icon-check" title="Сортировать по алфавиту"></i>
+            <i class="fas fa-trash-alt exceptions-deleted icon-check" title="Удалить весь список"></i>
+            <div class="addExceptionsForm-hidden">
+                <form name="addExceptions" class="addExceptionsForm">
+                    <div class="form-group">
+                        <label for="addExceptionsInput"></label>
+                        <input type="text" class="form-control form-control-sm" id="addExceptionsInput">
+                        <div class="invalid-feedback">
+                            Заполните поле для ввода исключений пожалуйста
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-outline-secondary">Добавить исключение</button>
+                </form>
+            </div>
+            <div class="exceptions-items-wrapper"></div>
+        </div>
+        <!-- / exceptions-box-->
+        <div class="card mb-3 seo">
+            <div class="card-header d-flex align-items-center">
+                <span>SEO SORTER v1.3</span>
+                <!-- icons-box-->
+                <div class="icons-box">
+                    <a href="index.html" title="Главная страница - Органайзер"><i class="far fa-calendar-check ml-5 icon-check"></i></a>
+                    <a href="timer.html" title="Таймер"><i class="fas fa-hourglass-start ml-1 icon-check"></i></a>
+                    <a href="stopwatch.html" title="Секундомер"><i class="fas fa-stopwatch ml-1 icon-check"></i></a>
+                </div>
+                <!-- / icons-box-->
+                <button type="button" class="btn btn-outline-secondary ml-auto btn-sm exceptions-btn" title="Управление списком исключений">Слова исключения</button>
+                <!-- Clock Start-->
+                <div class="clock ml-3">
+                    <div class="clock-display"></div>
+                    <div class="clock-control">
+                        <i class="far fa-clock icon-clock"></i>
+                        <i class="far fa-bell icon-clock"></i>
+                    </div>
+                </div>
+                <!-- Clock End-->
+            </div>
+            <div class="card-body">
+                <div class="alert message-alert"></div>
+                <form name="addWordsSeo">
+                    <div class="form-group">
+                        <label for="todoSeo">Список слов для сортировки</label>
+                        <textarea class="form-control" id="todoSeo" rows="8"></textarea>
+                        <div class="invalid-feedback">
+                            Заполните поле ввода пожалуйста
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary mt-3">Сортировать SEO</button>
+                    </div>
+                </form>
+                <div class="text-center mb-3 mt-3 d-block res-title">Результат Сортировки</div>
+                <pre class="resSeo" id="resSeoId" contenteditable="true"></pre>
+                <button type="button" class="btn btn-outline-secondary mt-3 btn-sm btn-copy-buffer">Копировать в буфер</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/seo.js"></script>
+<script src="js/clock.js"></script>
+
+
+</body>
+</html>
